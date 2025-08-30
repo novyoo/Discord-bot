@@ -1,6 +1,4 @@
-# Discord-bot
-
-# Discord Meme Bot 🤖
+# Discord Meme Bot 
 
 A fun Discord bot built with **Python** and **discord.py** that sends memes, reacts to certain phrases, and uses custom emojis.  
 
