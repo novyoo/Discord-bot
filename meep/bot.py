@@ -32,7 +32,7 @@ class MyClient(discord.Client):
             else:
                 await message.channel.send("<:oh_naur:1395067651067478136>")
 #greetings       
-        if re.search(r'\b(hi|hello|hey|yo|greetings)\b', message.content.lower()):
+        if re.search(r'\b(hi|hello|hey|yo|greetings|hola|hola senor)\b', message.content.lower()):
             # Send your custom emoji
             emoji = self.get_emoji(1395070210905735218)
             if emoji:
@@ -47,6 +47,14 @@ class MyClient(discord.Client):
                 await message.channel.send(f"{emoji}")
             else:
                 await message.channel.send("<:holy_moly:1395073974228226079>")
+#hmm cat
+        if "hmm" or "mmm" in message.content.lower():
+            # Send your custom emoji
+            emoji = self.get_emoji(1413440036493463573)
+            if emoji:
+                await message.channel.send(f"{emoji}")
+            else:
+                await message.channel.send("<:hmmm:1413440036493463573>")
 
 intents = discord.Intents.default()
 intents.message_content = True
